@@ -65,7 +65,7 @@ if __name__ == "__main__":
     dl = DataLoader(ds,
                     batch_size = 4,
                     shuffle = True,
-                    num_workers = 4,
+                    num_workers = 2,
                     drop_last = True)
     for imgs, label in dl:
         print(len(imgs))

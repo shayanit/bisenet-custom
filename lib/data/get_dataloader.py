@@ -46,7 +46,7 @@ def get_data_loader(cfg, mode='train'):
         dl = DataLoader(
             ds,
             batch_sampler=batchsampler,
-            num_workers=4,
+            num_workers=2,
             pin_memory=True,
         )
     else:
@@ -55,7 +55,7 @@ def get_data_loader(cfg, mode='train'):
             batch_size=batchsize,
             shuffle=shuffle,
             drop_last=drop_last,
-            num_workers=4,
+            num_workers=2,
             pin_memory=True,
         )
     return dl
