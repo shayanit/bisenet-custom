@@ -1,12 +1,12 @@
 
 cfg = dict(
     model_type='bisenetv1',
-    n_cats=19,
+    n_cats=20,
     num_aux_heads=2,
     lr_start=1e-2,
     weight_decay=5e-4,
-    warmup_iters=1000,
-    max_iter=80000,
+    warmup_iters=10,
+    max_iter=1000,
     dataset='CityScapes',
     im_root='./datasets/cityscapes',
     train_im_anns='./datasets/cityscapes/train.txt',
